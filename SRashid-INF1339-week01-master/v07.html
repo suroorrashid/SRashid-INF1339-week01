@@ -20,10 +20,10 @@
        var bin = dec2bin2(number)
        document.getElementById("binary_output").innerHTML=bin
        
-       //send binary number ti funtion bin2ssd()
-       document.getElementById("bin2ssd_input").innerHTML=bin
+       //send binary number to funtion bin2ssd()
+       document.getElementById("binary2ssd_input").innerHTML=bin
        var ssd = bin2ssd(bin)
-       document.getElementById("bin2ssd_output").innerHTML=ssd
+       document.getElementById("binary2ssd_output").innerHTML=ssd
        
        //send ssd signals to function illuminate_segments()
        document.getElementById("illuminate_input").innerHTML=ssd
@@ -87,13 +87,14 @@ quotient = Math.floor(quotient/2)
             <p id="decimal_input">???</p>
             <p id="binary_output">???</p>
             </td>
-            <td class="blackbox"><h3>Binary to SSD Signal</h3></td>
+            <td class="blackbox"><h3>Binary to SSD Signal</h3>
                 <p id="binary2ssd_input"></p>
                 <p id="binary2ssd_output"></p>
-            <td class="blackbox"><h3>Illuminate Segments</h3></td>
+            </td>    
+            <td class="blackbox"><h3>Illuminate Segments</h3>
                 <p id="illuminate_input"></p>
                 <p id="illuminate_output"></p>
-            
+            </td>
         </tr>
     </table>
 </body>
